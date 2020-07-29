@@ -70,13 +70,18 @@
             android:layout_height="match_parent"
             android:layout_weight="@integer/qs_footer_actions_weight"
             android:gravity="center_vertical|end" >
-            
-            <com.android.systemui.statusbar.phone.MultiUserSwitch
+
+            <com.android.systemui.statusbar.AlphaOptimizedFrameLayout
+                android:id="@+id/settings_button_container"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:clipChildren="false"
+                android:clipToPadding="false">
+                
+                <com.android.systemui.statusbar.phone.MultiUserSwitch
                  android:id="@+id/multi_user_switch"
                  android:layout_width="@dimen/qs_footer_action_button_size"
                  android:layout_height="@dimen/qs_footer_action_button_size"
-                 android:layout_alignParentEnd="true"
-                 android:layout_marginLeft="16dp"
                  android:background="@drawable/ripple_drawable"
                  android:focusable="true">
 
@@ -86,14 +91,8 @@
                      android:layout_height="@dimen/multi_user_avatar_expanded_size"
                      android:layout_gravity="center_vertical"
                      android:scaleType="centerInside"/>
+                
             </com.android.systemui.statusbar.phone.MultiUserSwitch>
-
-            <com.android.systemui.statusbar.AlphaOptimizedFrameLayout
-                android:id="@+id/settings_button_container"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:clipChildren="false"
-                android:clipToPadding="false">
 
                 <com.android.systemui.statusbar.phone.SettingsButton
                     android:id="@+id/settings_button"
