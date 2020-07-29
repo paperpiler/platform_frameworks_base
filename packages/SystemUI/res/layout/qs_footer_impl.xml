@@ -84,7 +84,6 @@
                  android:id="@+id/multi_user_switch"
                  android:layout_width="@dimen/qs_footer_action_button_size"
                  android:layout_height="@dimen/qs_footer_action_button_size"
-                 android:padding="@dimen/qs_footer_icon_padding"
                  android:background="@drawable/ripple_drawable"
                  android:focusable="true">
 
